@@ -32,6 +32,36 @@ npm run dev
 
 Open **http://localhost:3000**. The page fetches portfolio data from the backend; **start the backend first** or you’ll see “Failed to load”. The chat widget sends only messages; if the backend is down, it shows “Chat is unavailable.”
 
+## Docker (Run Both Services Together)
+
+Docker is a good choice if you want reproducible setup and simpler deployment to VM/container platforms. If you deploy to Vercel (frontend) + Render (backend), Docker is optional.
+
+From the repository root:
+
+```bash
+docker compose up --build
+```
+
+This starts:
+- Frontend at **http://localhost:3000**
+- Backend at **http://localhost:4000**
+
+Stop containers:
+
+```bash
+docker compose down
+```
+
+If you want chat to work in Docker, provide your API key when starting:
+
+```bash
+OPENROUTER_API_KEY=your_key_here docker compose up --build
+```
+
+Notes:
+- Frontend image is built with `NEXT_PUBLIC_API_URL=http://localhost:4000`.
+- Backend CORS in Docker is set with `FRONTEND_URL=http://localhost:3000`.
+
 ## Deploy
 
 ### Backend (Heroku, Railway, Render, etc.)
