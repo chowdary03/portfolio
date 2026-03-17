@@ -1,0 +1,27 @@
+{
+  "name": "Lahari Chowdary Talasila",
+  "title": "AI/ML Engineer & Software Developer",
+  "tagline": "AI/ML Engineering · Software Development · Production Systems",
+  "headline": "Designing and building reliable AI-powered software.",
+  "intro": "I’m interested in how strong technical products are actually built — how good ideas become reliable systems, how research becomes usable software, and how thoughtful engineering creates real leverage.",
+  "email": "laharichowdarytalasila@gmail.com",
+  "linkedin": "https://linkedin.com/in/lahari-talasila-",
+  "github": "https://github.com/chowdary03",
+  "location": "Buffalo, NY",
+  "availability": "Focused on AI/ML and software systems",
+  "profileImage": "/image.png",
+  "resumeUrl": null,
+  "focusAreas": [
+    "LLM Systems",
+    "RAG Pipelines",
+    "Full-Stack Development",
+    "Data Engineering",
+    "Machine Learning"
+  ],
+  "stats": {
+    "yearsExperience": "2+",
+    "projectsHighlighted": "10+",
+    "publications": "1",
+    "hackathonPlace": "Top 10"
+  }
+}

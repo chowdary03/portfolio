@@ -1,0 +1,90 @@
+{
+	"projects": [
+		{
+			"id": "portfolio-website",
+			"title": "AI Engineer Portfolio Website",
+			"period": "2026",
+			"description": "Built and iterated this portfolio as a product-grade system rather than a static resume page. The work included designing a scalable data-driven structure, integrating a dedicated backend API, and reshaping the frontend for clear narrative flow across technical depth, project outcomes, and role readiness. I focused on responsive behavior, strong information hierarchy, and clean visual storytelling so each section is easy to scan while still preserving detail for deeper review.",
+			"highlight": "Converted a basic profile site into a structured engineering narrative with reusable data models and scalable section architecture.",
+			"metrics": [
+				{ "label": "Stack", "value": "Next.js + TypeScript" },
+				{ "label": "Architecture", "value": "API-driven content" }
+			],
+			"tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js"],
+			"category": "Product / Frontend",
+			"academic": false,
+			"image": null,
+			"githubUrl": "https://github.com/chowdary03/portfolio",
+			"liveUrl": null
+		},
+		{
+			"id": "customer-support-ai",
+			"title": "Customer-Support AI Chat Portal",
+			"period": "Oct 2025 – Present",
+			"description": "Designed a serverless AI support platform that combines ticket ingestion, summarization, and routing into a unified operational workflow. The system integrates event-driven backend services with model-assisted triage to reduce manual bottlenecks and speed up handoffs for human agents. I worked on architecture decisions around reliability, observability, and deployment automation, ensuring updates could ship safely while preserving response quality under load.",
+			"highlight": "Connected LLM-assisted triage with production support operations through a deployment-ready serverless architecture.",
+			"metrics": [
+				{ "label": "Uptime", "value": "99.9%" },
+				{ "label": "Agent throughput", "value": "+70%" },
+				{ "label": "Release cycle", "value": "-60%" }
+			],
+			"tech": ["AWS Lambda", "API Gateway", "S3", "Amazon Bedrock", "Terraform", "GitHub Actions", "CloudWatch"],
+			"category": "Full-Stack AI",
+			"academic": false,
+			"image": null,
+			"githubUrl": "https://github.com/chowdary03/customer-support-portal",
+			"liveUrl": null
+		},
+		{
+			"id": "forensics-detective",
+			"title": "Forensics Detective",
+			"period": "2025",
+			"description": "Built an applied media-forensics investigation platform focused on identifying manipulation artifacts and supporting evidence-driven analysis workflows. The project combines backend processing, interactive frontend exploration, and AI-assisted guidance to help users navigate forensic checks, compare media signals, and interpret outputs in a structured investigation pipeline.",
+			"highlight": "Designed as a practical forensic-analysis tool with guided workflows and interpretable output surfaces.",
+			"metrics": [
+				{ "label": "Focus", "value": "Media forensics" },
+				{ "label": "Architecture", "value": "Full-stack" }
+			],
+			"tech": ["Python", "Flask", "React", "REST APIs", "Media Processing"],
+			"category": "Applied AI System",
+			"academic": false,
+			"image": null,
+			"githubUrl": "https://github.com/chowdary03/forensics-detective",
+			"liveUrl": null
+		},
+		{
+			"id": "skin-cancer-detection",
+			"title": "Skin Cancer Detection",
+			"period": "Aug 2024",
+			"description": "Developed a deep learning pipeline for benign vs malignant lesion classification using transfer learning with multiple CNN backbones. Beyond model training, I focused on end-to-end experimentation discipline: preprocessing strategy, augmentation choices, validation methodology, and leaderboard-driven iteration. The project strengthened my ability to balance model accuracy with practical engineering concerns such as reproducibility and interpretable evaluation.",
+			"highlight": "Iterative transfer-learning workflow that combined medical-imaging rigor with practical model-engineering decisions.",
+			"metrics": [
+				{ "label": "Kaggle", "value": "Top 5%" },
+				{ "label": "Leaderboard score", "value": "1.844" }
+			],
+			"tech": ["PyTorch", "ResNet50", "EfficientNet", "Computer Vision"],
+			"category": "Computer Vision",
+			"academic": false,
+			"image": null,
+			"githubUrl": null,
+			"liveUrl": null
+		},
+		{
+			"id": "eto-forecasting",
+			"title": "Deep Learning-Based ETo Forecasting",
+			"period": "Aug 2023 – Apr 2024",
+			"description": "Built a hybrid LSTM-CNN forecasting system for reference evapotranspiration using long-range weather histories from hundreds of locations. I handled feature preparation, temporal modeling, error analysis, and benchmark comparison to improve forecasting quality across lead times. The project emphasized translating research-style modeling into operationally useful signals for agriculture and environmental planning, with careful attention to generalization and stability.",
+			"highlight": "Combined sequence modeling and spatial signal learning to improve practical forecasting quality at scale.",
+			"metrics": [
+				{ "label": "RMSE reduction", "value": "80%" },
+				{ "label": "1-day lead", "value": "2.0 → 0.4 mm/day" }
+			],
+			"tech": ["TensorFlow", "LSTM", "CNN", "Time Series", "Forecasting"],
+			"category": "Applied ML Research",
+			"academic": true,
+			"image": null,
+			"githubUrl": null,
+			"liveUrl": null
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"certifications": [
+		{
+			"name": "Full Stack Web Development",
+			"issuer": "Main Flow Services & Technologies Pvt. Ltd.",
+			"period": "Jul 2024 – Sep 2024",
+			"summary": "Hands-on training in full-stack application development, frontend integration, and backend workflow implementation.",
+			"credentialUrl": "/certificates/Main%20Flow_Training.pdf",
+			"imageUrl": null
+		},
+		{
+			"name": "Data Encryption using AWS KMS",
+			"issuer": "UST",
+			"period": "Jul 2024",
+			"summary": "Credential focused on cloud encryption workflows, key management, and secure data protection patterns in AWS environments.",
+			"credentialUrl": "/certificates/courseera%20certification%20AWS.pdf",
+			"imageUrl": null
+		},
+		{
+			"name": "Business Analysis & Project Management",
+			"issuer": "Coursera",
+			"period": "2024",
+			"summary": "Training focused on requirements analysis, project planning, stakeholder communication, and delivery workflow management.",
+			"credentialUrl": "/certificates/Coursera%20BA%20%26PM.pdf",
+			"imageUrl": null
+		},
+		{
+			"name": "Visual Analytics",
+			"issuer": "Coursera",
+			"period": "2024",
+			"summary": "Certification covering data visualization design, exploratory analysis, and dashboard storytelling for decision support.",
+			"credentialUrl": "/certificates/Visual%20Analytics.png",
+			"imageUrl": "/certificates/Visual%20Analytics.png"
+		}
+	]
+}

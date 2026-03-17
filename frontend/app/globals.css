@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --accent-muted: rgb(96 165 250 / 0.18);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-image:
+    radial-gradient(circle at top left, rgba(96, 165, 250, 0.08), transparent 24%),
+    radial-gradient(circle at 85% 15%, rgba(20, 184, 166, 0.08), transparent 18%),
+    linear-gradient(180deg, rgba(9, 9, 11, 1), rgba(12, 17, 27, 1));
+}
+
+::selection {
+  background: rgba(96, 165, 250, 0.3);
+  color: var(--foreground);
+}
+
+.section-anchor-offset {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Focus ring for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--accent);
+}

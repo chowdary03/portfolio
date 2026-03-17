@@ -1,0 +1,17 @@
+{
+	"achievements": [
+		{
+			"title": "AI for Good Hackathon (University at Buffalo)",
+			"detail": "Ranked in the Top 10 among 200+ participating teams for building a sustainability-focused AI solution designed to improve ESG scoring workflows. The project combined problem framing, rapid prototyping, and model-backed decision support in a time-constrained hackathon setting, with emphasis on practical usability and measurable social impact."
+		},
+		{
+			"title": "Automated Decision Making Research",
+			"detail": "Developed and evaluated automated monitoring and drift-detection workflows for industrial decision systems, improving pipeline stability by 30%. Designed targeted quality-control checks and threshold-based alerts that reduced manual review effort by 40%, enabling faster anomaly response and more reliable model-assisted operations in production-oriented environments."
+		}
+	],
+	"publication": {
+		"title": "A Data-Driven Approach for Reference Evapotranspiration Forecasting: Merging Weather Forecasts with Persistence-based Approaches",
+		"journal": "Agricultural and Forest Meteorology / Journal of Hydrology",
+		"status": "Under Review"
+	}
+}
