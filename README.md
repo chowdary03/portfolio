@@ -2,6 +2,10 @@
 
 Personal portfolio (frontend + backend) showcasing skills, projects, experience, education, achievements, and an AI chat assistant.
 
+## Live Site
+
+- https://portfolio.zenthera.me/
+
 ## Structure
 
 - **`frontend/`** — Next.js (React, Tailwind, Framer Motion). All UI; no server-side secrets. **Fetches portfolio data from the backend** on load (GET /api/profile, /api/projects, etc.). Chat widget sends only `messages` to `POST /api/chat`; the system prompt is built on the backend. API client in `lib/api.ts`.
@@ -61,34 +65,6 @@ OPENROUTER_API_KEY=your_key_here docker compose up --build
 Notes:
 - Frontend image is built with `NEXT_PUBLIC_API_URL=http://localhost:4000`.
 - Backend CORS in Docker is set with `FRONTEND_URL=http://localhost:3000`.
-
-## Deploy
-
-### Backend (Heroku, Railway, Render, etc.)
-
-1. **Start command**: `npm start` (runs `node server.js`). No need to run `dotenv` manually—platforms inject env vars; we still call `dotenv.config()` so a `.env` file works locally.
-2. **Required env vars** (set in the platform’s Config vars / Environment):
-   - `OPENROUTER_API_KEY` — from [OpenRouter](https://openrouter.ai). Required for chat; other routes work without it.
-   - `FRONTEND_URL` — exact frontend origin, e.g. `https://your-portfolio.vercel.app`. No trailing slash. Used for CORS and OpenRouter referrer.
-   - `PORT` — usually set by the platform; default 4000 if unset.
-3. **CORS**: Backend allows `http://localhost:3000`, `http://127.0.0.1:3000`, and `process.env.FRONTEND_URL`. Set `FRONTEND_URL` in production so the deployed frontend can call the API.
-4. **Health check**: Use `GET /health` for liveness/readiness if the platform supports it.
-
-### Frontend (Vercel, Netlify)
-
-1. **Build**: `npm run build` (output: `.next`).
-2. **Env**: Set **at build time** (e.g. in Vercel/Netlify dashboard):
-   - `NEXT_PUBLIC_API_URL` — production backend URL, e.g. `https://your-api.herokuapp.com`.
-   - Next.js inlines `NEXT_PUBLIC_*` at build; if you don’t set this in production, the client will keep using the default `http://localhost:4000` and chat will fail.
-3. Optional: `NEXT_PUBLIC_BASE_URL` for canonical URL (e.g. `https://your-portfolio.vercel.app`).
-
-### Summary
-
-| Where    | Variable                 | Purpose |
-|----------|--------------------------|---------|
-| Backend  | `OPENROUTER_API_KEY`     | Chat (OpenRouter) |
-| Backend  | `FRONTEND_URL`           | CORS + referrer |
-| Frontend | `NEXT_PUBLIC_API_URL`    | Backend base URL (must be set for production build) |
 
 ## Data
 
